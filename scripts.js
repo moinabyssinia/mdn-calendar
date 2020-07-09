@@ -15,7 +15,7 @@ daysBoxes.style.display = "none"
 
     /* selectively display day boxes */
     if (userChoice[0].value === months28[0]){
-        daysBoxes.style.display = "block";
+        daysBoxes.style.display = "none";
         display28();
     } else {
         for(let ii = 0; ii < months31.length; ii++){
@@ -36,14 +36,24 @@ daysBoxes.style.display = "none"
 
  function display30(){
     daysBoxes.style.display = "block";
+    let novMonths = document.querySelectorAll(".nov");
+    for (let nn = 0; nn < novMonths.length; nn++){
+        novMonths[nn].style.display = "block";
+    }
     document.querySelectorAll("li")[30].style.display = "none";
-    // document.querySelectorAll(".thirty").style.display = 'none';
  }
  function display31(){
-    daysBoxes.style.display = "initial";
+    daysBoxes.style.display = "block";
+    let novMonths = document.querySelectorAll(".nov");
+    for (let nn = 0; nn < novMonths.length; nn++){
+        novMonths[nn].style.display = "block";
+    }
  }
  function display28(){
     daysBoxes.style.display = "block";
-    document.querySelectorAll(".nov").style.display = 'none';
+    let novMonths = document.querySelectorAll(".nov");
+    for (let nn = 0; nn < novMonths.length; nn++){
+        novMonths[nn].style.display = "none";
+    }
  }
 
