@@ -1,0 +1,18 @@
+ul{
+    list-style-type: none;
+    margin: 0 0;
+    padding: 0;
+}
+.days{
+    width: 100%;
+    background: red;
+}
+li{
+    width: 24.7%;
+    height: 40px;
+    display: flex;
+    float: left;
+    background: rgb(75, 9, 197);
+    color: rgb(255,255,255);
+    margin: 3px 3px;
+}

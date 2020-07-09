@@ -1,11 +1,7 @@
-let heading = document.querySelector("h1");
+let heading = document.getElementsByTagName("h1");
 let userChoice = document.getElementsByTagName("select");
 
-userChoice.onchange = function(){
-    changeHeader();
-}
-
-//rename heading
-function changeHeader(){
-    heading.textContent = userChoice[0].value;
-}
+/* change heading to selected month */
+ userChoice[0].onchange = function(){
+     heading[0].textContent = userChoice[0].value;
+ }
